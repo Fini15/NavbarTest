@@ -24,18 +24,13 @@ require "settings/init.php";
 <body>
 <nav class="navbar bg-body-tertiary position-relative">
     <div class="position-absolute top-50 start-50 translate-middle">
-        <img src="img/blomsterlogo.png" height="70"</img>
+        <img src="img/blomsterlogo1.svg" height="50" </img>
     </div>
     <div class="ms-auto pe-3">
         <a class="navbar-brand fa-solid fa-basket-shopping" href="#"></a>
     </div>
 </nav>
 
-<br>
-
-<h1>hej med jer jeg tror det virker xd
-    <br>
-    vh lars</h1>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://kit.fontawesome.com/fa23e7aba1.js" crossorigin="anonymous"></script>
