@@ -29,8 +29,6 @@ require "settings/init.php";
     <div class="ms-auto pe-3">
         <a class="navbar-brand fa-solid fa-basket-shopping" href="#"></a>
     </div>
-    <p>Hej med jer</p>
-    <p>Tror det virker</p>
 </nav>
 
 
