@@ -33,6 +33,11 @@ require "settings/init.php";
     <p>Tror det virker</p>
 </nav>
 
+<br>
+
+<h1>hej med jer jeg tror det virker xd
+    <br>
+    vh lars</h1>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://kit.fontawesome.com/fa23e7aba1.js" crossorigin="anonymous"></script>
