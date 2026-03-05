@@ -87,31 +87,7 @@ $items = [
 
 <script>
 
-    document.querySelectorAll(".plus").forEach(btn=>{
-        btn.addEventListener("click",function(){
-
-            let id = this.dataset.id;
-            let qty = document.getElementById("qty-"+id);
-
-            qty.innerText = parseInt(qty.innerText) + 1;
-
-        });
-    });
-
-    document.querySelectorAll(".minus").forEach(btn=>{
-        btn.addEventListener("click",function(){
-
-            let id = this.dataset.id;
-            let qty = document.getElementById("qty-"+id);
-
-            let value = parseInt(qty.innerText);
-
-            if(value > 0){
-                qty.innerText = value - 1;
-            }
-
-        });
-    });
+   
 
 </script>
 
