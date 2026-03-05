@@ -31,6 +31,11 @@ require "settings/init.php";
     </div>
 </nav>
 
+<div>
+    <img src="img/rødrose.svg" width="150" height="150">
+    <img src="img/Hvid%20rose.svg" width="150" height="150">
+    <img src="img/lyserødrose.svg" width="150" height="150">
+</div>
 
 
 
