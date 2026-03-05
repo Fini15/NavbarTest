@@ -10,7 +10,6 @@ $link-decoration: none;
 
 // 4. Include any default map overrides here
 $custom-colors: (
-	"farve": $EB87D6,
 
 );
 
@@ -51,3 +50,6 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   margin-top:10px;
 }
 
+.overskrift{
+  font-family: Bobogie Groovy;
+}
