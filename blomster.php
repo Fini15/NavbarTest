@@ -10,7 +10,7 @@ require "settings/init.php";
 <head>
     <meta charset="utf-8">
 
-    <title>Sigende titel</title>
+    <title>Blomsterhuset</title>
 
     <meta name="robots" content="All">
     <meta name="author" content="Udgiver">
@@ -26,7 +26,7 @@ require "settings/init.php";
 
 <nav class="navbar bg-body-tertiary position-relative">
     <div class="position-absolute top-50 start-50 translate-middle">
-        <img src="img/blomsterlogo1.svg" height="50" </img>
+        <img src="img/blomsterlogo1.svg" height="50" alt="Blomsterhuset" <img>
     </div>
     <div class="ms-auto pe-3">
         <a class="navbar-brand fa-solid fa-basket-shopping" href="#"></a>
@@ -37,51 +37,47 @@ require "settings/init.php";
     <div class="row g-3">
 
         <?php
-        $products = [
-                ["id" => 1, "name" => "Big Mac", "price" => 5.99, "emoji" => "🍔"],
-                ["id" => 2, "name" => "Quarter Pounder", "price" => 5.49, "emoji" => "🍔"],
-                ["id" => 3, "name" => "Chicken McNuggets", "price" => 4.99, "emoji" => "🍗"],
-                ["id" => 4, "name" => "Filet-O-Fish", "price" => 4.49, "emoji" => "🐟"],
-                ["id" => 5, "name" => "French Fries", "price" => 2.99, "emoji" => "🍟"],
-                ["id" => 6, "name" => "Apple Pie", "price" => 1.99, "emoji" => "🥧"],
-                ["id" => 7, "name" => "Coca-Cola", "price" => 2.49, "emoji" => "🥤"],
-                ["id" => 8, "name" => "McFlurry", "price" => 3.99, "emoji" => "🍦"],
-                ["id" => 9, "name" => "Salad", "price" => 6.99, "emoji" => "🥗"],
-        ];
-        ?>
+        $sql = "SELECT * FROM products WHERE prodCategoryId = 2";
+        $products = $db->sql($sql);
 
-        <?php foreach($products as $product): ?>
+        foreach($products as $product) {
+            $imagePath = "img/" . $product->prodName . ".svg";
+            ?>
             <div class="col-12 col-sm-6 col-lg-4">
                 <div class="card product-card h-100 shadow-sm">
-                    <div class="card-body d-flex flex-column">
-                        <div class="product-emoji text-center mb-2">
-                            <span style="font-size: 3rem;"><?php echo $product['emoji']; ?></span>
+                    <div class="card-body d-flex flex-column text-center">
+
+                        <div class="text-center mb-2">
+                            <img src="<?php echo $imagePath; ?>" class='img-fluid' style="height: 150px; object-fit: contain;" alt='<?php echo $product->prodName; ?>'>
                         </div>
 
-                        <h5 class="card-title text-center"><?php echo $product['name']; ?></h5>
+                        <h5 class="card-title text-center mb-2">
+                            <?php echo $product->prodName; ?>
+                        </h5>
 
-                        <p class="card-text text-center text-danger fw-bold">
-                            $<?php echo number_format($product['price'], 2); ?>
-                        </p>
-
-                        <div class="controls d-flex justify-content-center gap-2 mt-auto">
-                            <button class="btn btn-outline-danger btn-sm minus" data-id="<?php echo $product['id']; ?>" data-price="<?php echo $product['price']; ?>">−</button>
-                            <div class="quantity text-center" id="qty-<?php echo $product['id']; ?>" style="min-width: 40px;">0</div>
-                            <button class="btn btn-outline-success btn-sm plus" data-id="<?php echo $product['id']; ?>" data-price="<?php echo $product['price']; ?>">+</button>
+                        <div class="card-text text-center text-danger fw-bold mb-3">
+                            <?php echo number_format($product->prodPrice, 2, ',', '.'); ?> kr.
                         </div>
 
-                        <button class="btn btn-secondary btn-sm mt-2 add-to-cart" data-id="<?php echo $product['id']; ?>" data-name="<?php echo $product['name']; ?>" data-price="<?php echo $product['price']; ?>" data-emoji="<?php echo $product['emoji']; ?>">
+                        <div class="controls d-flex justify-content-center align-items-center gap-2 mt-auto">
+                            <button class="btn btn-outline-danger btn-sm minus" data-id="<?php echo $product->prodId; ?>">−</button>
+                            <div class="quantity text-center" id="qty-<?php echo $product->prodId; ?>" style="min-width: 40px;">0</div>
+                            <button class="btn btn-outline-success btn-sm plus" data-id="<?php echo $product->prodId; ?>">+</button>
+                        </div>
+
+                        <button class="btn btn-secondary btn-sm mt-2 add-to-cart"
+                                data-id="<?php echo $product->prodId; ?>"
+                                data-name="<?php echo $product->prodName; ?>"
+                                data-price="<?php echo $product->prodPrice; ?>">
                             Add to Cart
                         </button>
                     </div>
                 </div>
             </div>
-        <?php endforeach; ?>
+            <?php
+        }
+        ?>
 
-    </div>
-</div>
-
-<!-- Shopping Cart Offcanvas -->
 <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas">
     <div class="offcanvas-header bg-danger text-white">
         <h5 class="offcanvas-title">Order Summary</h5>
@@ -100,9 +96,6 @@ require "settings/init.php";
         </div>
     </div>
 </div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://kit.fontawesome.com/fa23e7aba1.js" crossorigin="anonymous"></script>
 
 <script>
     // Cart storage
@@ -212,11 +205,19 @@ require "settings/init.php";
 </script>
 
 
+<div class=" mb-5">
+    <div class="row justify-content-center">
+        <div class="col-10 col-md-10 text-center">
+            <a href="indkøbskurv.php" class="btn bigbtn w-100 mt-3 py-3 rounded-pill">Går til klassen</a>
+        </div>
+    </div>
+</div>
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://kit.fontawesome.com/fa23e7aba1.js" crossorigin="anonymous"></script>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://kit.fontawesome.com/fa23e7aba1.js" crossorigin="anonymous"></script>
 </body>
 </html>
-
