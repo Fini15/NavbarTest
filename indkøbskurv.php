@@ -25,7 +25,7 @@ require "settings/init.php";
 
 <nav class="navbar bg-body-tertiary position-relative p-4">
     <div class="position-absolute top-50 start-50 translate-middle">
-        <img src="img/blomsterlogo1.svg" height="50"</img>
+        <img src="img/blomsterlogo1.svg" height="50" alt="blomsthuset"</img>
     </div>
 </nav>
 
