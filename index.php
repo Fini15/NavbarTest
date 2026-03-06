@@ -31,17 +31,8 @@ require "settings/init.php";
     </div>
 </nav>
 
-<div>
-    <img src="img/rød rose.svg" width="150" height="150">
-    <img src="img/Hvid rose.svg" width="150" height="150">
-    <img src="img/Lyserød rose.svg" width="150" height="150">
-    <img src="img/Pæon.svg" width="150" height="150">
-    <img src="img/Hvid orkide.svg" width="150" height="150">
-    <img src="img/Lilla orkide.svg" width="150" height="150">
-    <img src="img/Brudeslør.svg" width="150" height="150">
-    <img src="img/Eucalyptus.svg" width="150" height="150">
-    <img src="img/Lavender.svg" width="150" height="150">
-</div>
+
+
 
 
 
