@@ -31,8 +31,6 @@ require "settings/init.php";
     </div>
 </nav>
 
-<img src="img/">
-
 
 
 
