@@ -21,27 +21,22 @@ require "settings/init.php";
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body>
-<nav class="navbar bg-body-tertiary position-relative">
-    <div class="position-absolute top-50 start-50 translate-middle">
-        <img src="img/blomsterlogo1.svg" height="50" </img>
-    </div>
-    <div class="ms-auto pe-3">
-        <a class="navbar-brand fa-solid fa-basket-shopping" href="#"></a>
-    </div>
-</nav>
+<div class='container text-center mt-5'
+     <a href="saml-selv.php">
+         <img src="img/Hvidrose.svg" alt="Saml selv" width="120">
+     </a>
+<p>Saml selv</p>
 
-<div>
-    <img src="img/rødrose.svg" width="150" height="150">
-    <img src="img/Hvid%20rose.svg" width="150" height="150">
-    <img src="img/lyserødrose.svg" width="150" height="150">
-    <img src="img/pæoner.svg" width="150" height="150">
-    <img src="img/hvidOrkide.svg" width="150" height="150">
-    <img src="img/lillorkide.svg" width="150" height="150">
-    <img src="img/brudeslør.svg" width="150" height="150">
-    <img src="img/eucalyptus.svg" width="150" height="150">
-    <img src="img/lavendel.svg" width="150" height="150">
-</div>
+<div class='container text-center mt-5'
+<a href="buketter.php">
+    <img src="img/Sunflowers.svg" alt="Buketter" width="120">
+</a>
+<p>Buketter</p>
+
+
+<body>
+
+
 
 
 
