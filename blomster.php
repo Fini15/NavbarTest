@@ -207,7 +207,7 @@ require "settings/init.php";
 
 <div class=" mb-5">
     <div class="row justify-content-center">
-        <div class="col-12 col-md-8 text-center">
+        <div class="col-10 col-md-10 text-center">
             <a href="indkøbskurv.php" class="btn bigbtn w-100 mt-3 py-3 rounded-pill">Går til klassen</a>
         </div>
     </div>
