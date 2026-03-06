@@ -41,7 +41,7 @@ require "settings/init.php";
 
     <div class="row">
         <div class="col-3">
-            <img src="img/rødrose.svg" class="img-fluid border" alt="Rød rose">
+            <img src="img/rød rose.svg" class="img-fluid border" alt="Rød rose">
         </div>
         <div class="col-6">
             <p class="fw-bold">Rød rose</p>
@@ -54,7 +54,7 @@ require "settings/init.php";
 
     <div class="row pt-5">
         <div class="col-3">
-            <img src="img/rødrose.svg" class="img-fluid border" alt="Rød rose">
+            <img src="img/rød rose.svg" class="img-fluid border" alt="Rød rose">
         </div>
         <div class="col-6">
             <p class="fw-bold">Rød rose</p>

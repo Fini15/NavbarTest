@@ -32,15 +32,15 @@ require "settings/init.php";
 </nav>
 
 <div>
-    <img src="img/rødrose.svg" width="150" height="150">
-    <img src="img/Hvid%20rose.svg" width="150" height="150">
-    <img src="img/lyserødrose.svg" width="150" height="150">
-    <img src="img/pæoner.svg" width="150" height="150">
-    <img src="img/hvidOrkide.svg" width="150" height="150">
-    <img src="img/lillorkide.svg" width="150" height="150">
-    <img src="img/brudeslør.svg" width="150" height="150">
-    <img src="img/eucalyptus.svg" width="150" height="150">
-    <img src="img/lavendel.svg" width="150" height="150">
+    <img src="img/rød rose.svg" width="150" height="150">
+    <img src="img/Hvid rose.svg" width="150" height="150">
+    <img src="img/Lyserød rose.svg" width="150" height="150">
+    <img src="img/Pæon.svg" width="150" height="150">
+    <img src="img/Hvid orkide.svg" width="150" height="150">
+    <img src="img/Lilla orkide.svg" width="150" height="150">
+    <img src="img/Brudeslør.svg" width="150" height="150">
+    <img src="img/Eucalyptus.svg" width="150" height="150">
+    <img src="img/Lavender.svg" width="150" height="150">
 </div>
 
 
