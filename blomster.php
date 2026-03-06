@@ -43,45 +43,40 @@ require "settings/init.php";
         foreach($products as $product) {
             $imagePath = "img/" . $product->prodName . ".svg";
             ?>
-        <div class="col-12 col-sm-6 col-lg-4">
-            <div class="card product-card h-100 shadow-sm">
-                <div class="card-body d-flex flex-column text-center">
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card product-card h-100 shadow-sm">
+                    <div class="card-body d-flex flex-column text-center">
 
-                    <div class="text-center mb-2">
-                        <img src="<?php echo $imagePath; ?>" class='img-fluid' alt='<?php echo $product->prodName; ?>'>
+                        <div class="text-center mb-2">
+                            <img src="<?php echo $imagePath; ?>" class='img-fluid' style="height: 150px; object-fit: contain;" alt='<?php echo $product->prodName; ?>'>
+                        </div>
+
+                        <h5 class="card-title text-center mb-2">
+                            <?php echo $product->prodName; ?>
+                        </h5>
+
+                        <div class="card-text text-center text-danger fw-bold mb-3">
+                            <?php echo number_format($product->prodPrice, 2, ',', '.'); ?> kr.
+                        </div>
+
+                        <div class="controls d-flex justify-content-center align-items-center gap-2 mt-auto">
+                            <button class="btn btn-outline-danger btn-sm minus" data-id="<?php echo $product->prodId; ?>">−</button>
+                            <div class="quantity text-center" id="qty-<?php echo $product->prodId; ?>" style="min-width: 40px;">0</div>
+                            <button class="btn btn-outline-success btn-sm plus" data-id="<?php echo $product->prodId; ?>">+</button>
+                        </div>
+
+                        <button class="btn btn-secondary btn-sm mt-2 add-to-cart"
+                                data-id="<?php echo $product->prodId; ?>"
+                                data-name="<?php echo $product->prodName; ?>"
+                                data-price="<?php echo $product->prodPrice; ?>">
+                            Add to Cart
+                        </button>
                     </div>
-
-                    <div class="card-title text-center mb-2">
-                        <?php
-                        echo $product->prodName;
-                        ?>
-                    </div>
-
-                    <div class="card-text text-center text-danger fw-bold">
-                       <p> <?php echo number_format($product->prodPrice); ?> kr.</p>
-                    </div>
-
-                    <div class="controls d-flex justify-content-center al gap-2 mt-auto">
-                        <button class="btn btn-outline-danger btn-sm minus" data-id="<?php echo $product->prodId; ?>">−</button>
-                        <div class="quantity text-center" id="qty-<?php echo $product->prodId; ?>" style="min-width: 40px;">0</div>
-                        <button class="btn btn-outline-success btn-sm plus" data-id="<?php echo $product->prodId; ?>">+</button>
-                    </div>
-
-                    <button class="btn btn-secondary btn-sm mt-2 add-to-cart"
-                            data-id="<?php echo $product->prodId; ?>"
-                            data-name="<?php echo $product->prodName; ?>"
-                            data-price="<?php echo $product->prodPrice; ?>">
-                        Add to Cart
-                    </button>
-
-                    <?php
-        }
-        ?>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
+            <?php
+        }
+        ?>
 
 <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas">
     <div class="offcanvas-header bg-danger text-white">
