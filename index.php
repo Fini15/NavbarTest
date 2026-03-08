@@ -15,23 +15,37 @@ require "settings/init.php";
     <meta name="robots" content="All">
     <meta name="author" content="Udgiver">
     <meta name="copyright" content="Information om copyright">
-    
+
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 
-<div class='container text-center mt-5'
-     <a href="saml-selv.php">
-         <img src="img/Hvidrose.svg" alt="Saml selv" width="120">
-     </a>
-<p>Saml selv</p>
+<div class="text-center mt-3">
+    <img src="img/blomsterhuset.png" class="img-fluid" width="500" alt="logo">
+</div>
 
-<div class='container text-center mt-5'
+<div class='container text-center mt-5 pt-3'>
+     <div class="row justify-content-center gap-5 align-items-end">
+
+<div class="col-auto">
+    <a href="saml-selv.php">
+        <img src="img/Hvidrose.svg" alt="Saml selv" width="80">
+    </a>
+    <p>Saml selv</p>
+</div>
+
+<div class="col-auto">
 <a href="buketter.php">
-    <img src="img/Sunflowers.svg" alt="Buketter" width="120">
+    <img src="img/Sunflowers.jpeg" alt="Buketter" width="150">
 </a>
 <p>Buketter</p>
+     </div>
+</div>
+</div>
 
 
 <body>
