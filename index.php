@@ -20,7 +20,6 @@ require "settings/init.php";
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -32,7 +31,7 @@ require "settings/init.php";
      <div class="row justify-content-center gap-5 align-items-end">
 
 <div class="col-auto">
-    <a href="saml-selv.php">
+    <a href="blomster.php">
         <img src="img/Hvidrose.svg" alt="Saml selv" width="80">
     </a>
     <p>Saml selv</p>
