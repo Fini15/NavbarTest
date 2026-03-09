@@ -26,10 +26,10 @@ require "settings/init.php";
 
 <nav class="navbar bg-body-tertiary position-relative">
     <div class="position-absolute top-50 start-50 translate-middle">
-        <img src="img/blomsterlogo1.svg" height="50" alt="Blomsterhuset" <img>
+        <a href="index.php"><img src="img/blomsterlogo1.svg" height="50" alt="Blomsterhuset"></a>
     </div>
     <div class="ms-auto pe-3">
-        <a class="navbar-brand fa-solid fa-basket-shopping" href="#"></a>
+        <a class="navbar-brand fa-solid fa-basket-shopping" href="indkøbskurv.php"></a>
     </div>
 </nav>
 

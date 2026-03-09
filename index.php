@@ -27,7 +27,7 @@ require "settings/init.php";
         <img src="img/blomsterlogo1.svg" height="50" </img>
     </div>
     <div class="ms-auto pe-3">
-        <a class="navbar-brand fa-solid fa-basket-shopping" href="#"></a>
+        <a class="navbar-brand fa-solid fa-basket-shopping" href="indkøbskurv.php"></a>
     </div>
 </nav>
 
