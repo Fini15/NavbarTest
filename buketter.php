@@ -29,7 +29,7 @@ require "settings/init.php";
         <img src="img/blomsterlogo1.svg" height="50" alt="Blomsterhuset" <img>
     </div>
     <div class="ms-auto pe-3">
-        <a class="navbar-brand fa-solid fa-basket-shopping" href="#"></a>
+        <a class="navbar-brand fa-solid fa-basket-shopping" href="indkøbskurv.php"></a>
     </div>
 </nav>
 
@@ -41,8 +41,9 @@ require "settings/init.php";
         $products = $db->sql($sql);
 
         foreach($products as $product) {
-            $imagePath = "img/" . $product->prodName . ".svg";
+            $imagePath = "img/" . rawurlencode($product->prodName) . ".svg";
             ?>
+
             <div class="col-12 col-sm-6 col-lg-4">
                 <div class="card product-card h-100 shadow-sm">
                     <div class="card-body d-flex flex-column text-center">
