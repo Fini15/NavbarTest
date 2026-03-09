@@ -25,7 +25,7 @@ require "settings/init.php";
 
 <nav class="navbar bg-body-tertiary position-relative p-4">
     <div class="position-absolute top-50 start-50 translate-middle">
-        <img src="img/blomsterlogo1.svg" height="50"</img>
+        <img src="img/blomsterlogo1.svg" height="50" alt="blomsthuset"</img>
     </div>
 </nav>
 
@@ -41,7 +41,7 @@ require "settings/init.php";
 
     <div class="row">
         <div class="col-3">
-            <img src="img/rødrose.svg" class="img-fluid border" alt="Rød rose">
+            <img src="img/rød rose.svg" class="img-fluid border" alt="Rød rose">
         </div>
         <div class="col-6">
             <p class="fw-bold">Rød rose</p>
@@ -54,7 +54,7 @@ require "settings/init.php";
 
     <div class="row pt-5">
         <div class="col-3">
-            <img src="img/rødrose.svg" class="img-fluid border" alt="Rød rose">
+            <img src="img/rød rose.svg" class="img-fluid border" alt="Rød rose">
         </div>
         <div class="col-6">
             <p class="fw-bold">Rød rose</p>

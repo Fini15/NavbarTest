@@ -20,10 +20,14 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 // 5. Du kan lave styling her...
 .btn{
-  color: #EB87D6
+  color: #121212;
+  background-color: #EB87D6;
 ;
 }
 
+.bigbtn{
+  font-size: 30px;
+}
 
 .cart-box{
   border:2px solid #ddd;
