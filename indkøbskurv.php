@@ -34,42 +34,50 @@ require "settings/init.php";
         <h1 class="text-center p-4 overskrift">Indkøbskruv</h1>
     </div>
 
-    <div class="row border-bottom pb-1 mb-3">
+    <div class="row border-bottom pb-1 mb-3 display-6">
         <div class="col-8"><p class="fw-bold">Produkter</p></div>
         <div class="col-4 text-end"><p class="fw-bold">Pris</p></div>
     </div>
 
     <div class="row">
         <div class="col-3">
-            <img src="img/rød rose.svg" class="img-fluid border" alt="Rød rose">
+            <img src="img/Bryllup.svg" class="img-fluid border" alt="Bryllup">
         </div>
         <div class="col-6">
-            <p class="fw-bold">Rød rose</p>
+            <p class="fw-bold">Bryllup</p>
             <select class="form-select form-select-sm w-auto">
-                <option value="5">5 stk</option>
+                <option value="1">1 stk</option>
             </select>
         </div>
-        <div class="col-3 text-end"><p class="fw-bold">125 kr</p></div>
+        <div class="col-3 text-end"><p class="fw-bold">459 kr</p></div>
     </div>
 
     <div class="row pt-5">
         <div class="col-3">
-            <img src="img/rød rose.svg" class="img-fluid border" alt="Rød rose">
+            <img src="img/Roser.svg" class="img-fluid border" alt="Roser">
         </div>
         <div class="col-6">
-            <p class="fw-bold">Rød rose</p>
+            <p class="fw-bold">Roser</p>
             <select class="form-select form-select-sm w-auto">
-                <option value="5">5 stk</option>
+                <option value="2">2 stk</option>
             </select>
         </div>
-        <div class="col-3 text-end"><p class="fw-bold">125 kr</p></div>
+        <div class="col-3 text-end"><p class="fw-bold">598 kr</p></div>
     </div>
 </div>
 
-<div>
-    <div class="row border-top pt-5 mt-3">
+<div class="container">
+    <div class="row border-top pt-5 mt-3 display-6">
         <div class="col-8"><p class="fw-bold">Pris i alt</p></div>
-        <div class="col-4 text-end"><p class="fw-bold">250 kr</p></div>
+        <div class="col-4 text-end"><p class="fw-bold">1057 kr</p></div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row m-3">
+        <div class="col-6 col-md-6"><a href="#" class="btn bigbtn w-100 mt-3 py-3 rounded-pill">Mobilpay</a></div>
+        <div class="col-6 col-md-6"><a href="#" class="btn bigbtn w-100 mt-3 py-3 rounded-pill">Kort</a></div>
     </div>
 </div>
 

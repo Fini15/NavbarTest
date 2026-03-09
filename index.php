@@ -15,21 +15,39 @@ require "settings/init.php";
     <meta name="robots" content="All">
     <meta name="author" content="Udgiver">
     <meta name="copyright" content="Information om copyright">
-    
+
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
 </head>
 
+<div class="text-center mt-3">
+    <img src="img/blomsterhuset.png" class="img-fluid" width="500" alt="logo">
+</div>
+
+<div class='container text-center mt-5 pt-3'>
+     <div class="row justify-content-center gap-5 align-items-end">
+
+<div class="col-auto">
+    <a href="blomster.php">
+        <img src="img/Hvid rose.svg" alt="Saml selv" width="80">
+    </a>
+    <p>Saml selv</p>
+</div>
+
+<div class="col-auto">
+<a href="buketter.php">
+    <img src="img/Sunflowers.jpeg" alt="Buketter" width="150">
+</a>
+<p>Buketter</p>
+     </div>
+</div>
+</div>
+
+
 <body>
-<nav class="navbar bg-body-tertiary position-relative">
-    <div class="position-absolute top-50 start-50 translate-middle">
-        <img src="img/blomsterlogo1.svg" height="50" </img>
-    </div>
-    <div class="ms-auto pe-3">
-        <a class="navbar-brand fa-solid fa-basket-shopping" href="indkøbskurv.php"></a>
-    </div>
-</nav>
 
 
 

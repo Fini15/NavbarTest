@@ -41,8 +41,9 @@ require "settings/init.php";
         $products = $db->sql($sql);
 
         foreach($products as $product) {
-            $imagePath = "img/" . $product->prodName . ".svg";
+            $imagePath = "img/" . rawurlencode($product->prodName) . ".svg";
             ?>
+
             <div class="col-12 col-sm-6 col-lg-4">
                 <div class="card product-card h-100 shadow-sm">
                     <div class="card-body d-flex flex-column text-center">
