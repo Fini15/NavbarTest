@@ -26,7 +26,7 @@ require "settings/init.php";
 
 <nav class="navbar bg-body-tertiary position-relative">
     <div class="position-absolute top-50 start-50 translate-middle">
-        <img src="img/blomsterlogo1.svg" height="50" alt="Blomsterhuset">
+        <a href="index.php"> <img src="img/blomsterlogo1.svg" height="50" alt="Blomsterhuset"></a>
     </div>
     <div class="ms-auto pe-3">
         <a class="navbar-brand fa-solid fa-basket-shopping" href="indkøbskurv.php"></a>
@@ -207,7 +207,7 @@ require "settings/init.php";
 
 <div class=" mb-5">
     <div class="row justify-content-center">
-        <div class="col-10 col-md-10  text-center">
+        <div class="col-10 col-md-10 text-center">
             <a href="indkøbskurv.php" class="btn bigbtn w-100 mt-3 py-3 rounded-pill">Går til klassen</a>
         </div>
     </div>

@@ -25,7 +25,7 @@ require "settings/init.php";
 
 <nav class="navbar bg-body-tertiary position-relative p-4">
     <div class="position-absolute top-50 start-50 translate-middle">
-        <img src="img/blomsterlogo1.svg" height="50" alt="blomsthuset">
+        <a href="index.php"><img src="img/blomsterlogo1.svg" height="50" alt="blomsthuset"></a>
     </div>
 </nav>
 
@@ -45,8 +45,7 @@ require "settings/init.php";
         </div>
         <div class="col-6">
             <p class="fw-bold">Bryllup</p>
-            <label for="filter-select">Antal:</label>
-            <select id="filter-select" class="form-select form-select-sm w-auto">
+            <select class="form-select form-select-sm w-auto">
                 <option value="1">1 stk</option>
             </select>
         </div>
@@ -59,8 +58,7 @@ require "settings/init.php";
         </div>
         <div class="col-6">
             <p class="fw-bold">Roser</p>
-            <label for="filter-select">Antal:</label>
-            <select id="filter-select" class="form-select form-select-sm w-auto">
+            <select class="form-select form-select-sm w-auto">
                 <option value="2">2 stk</option>
             </select>
         </div>
