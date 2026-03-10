@@ -32,14 +32,14 @@ require "settings/init.php";
 
 <div class="col-auto">
     <a href="blomster.php">
-        <img src="img/Hvid rose.svg" alt="Saml selv" width="80">
+        <img src="img/Hvid%20rose.svg" alt="Saml selv" width="80">
     </a>
     <p>Saml selv</p>
 </div>
 
 <div class="col-auto">
 <a href="buketter.php">
-    <img src="img/Sunflowers.jpeg" alt="Buketter" width="150">
+    <img src="img/sunflowers.jpeg" alt="Buketter" width="150">
 </a>
 <p>Buketter</p>
      </div>

@@ -76,8 +76,8 @@ require "settings/init.php";
 
 <div class="container">
     <div class="row m-3">
-        <div class="col-6 col-md-6"><a href="#" class="btn bigbtn w-100 mt-3 py-3 rounded-pill">Mobilpay</a></div>
-        <div class="col-6 col-md-6"><a href="#" class="btn bigbtn w-100 mt-3 py-3 rounded-pill">Kort</a></div>
+        <div class="col-6 col-md-6"><a href="#" class="btn bigbtn w-100 mt-3 py-2 rounded-pill">Mobilpay</a></div>
+        <div class="col-6 col-md-6"><a href="#" class="btn bigbtn w-100 mt-3 py-2 rounded-pill">Kort</a></div>
     </div>
 </div>
 
