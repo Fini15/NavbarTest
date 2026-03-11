@@ -78,6 +78,8 @@ require "settings/init.php";
             <?php
         }
         ?>
+    </div>
+</div>
 
         <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas">
             <div class="offcanvas-header bg-danger text-white">
@@ -206,17 +208,13 @@ require "settings/init.php";
         </script>
 
 
-        <div class=" mb-5">
-            <div class="row justify-content-center">
-                <div class="col-10 col-md-10 text-center">
-                    <a href="indkøbskurv.php" class="btn bigbtn w-100 mt-3 py-3 rounded-pill">Går til klassen</a>
-                </div>
-            </div>
+<div class=" mb-5">
+    <div class="row justify-content-center">
+        <div class="col-10 col-md-10 text-center">
+            <a href="indkøbskurv.php" class="btn bigbtn w-100 mt-3 py-3 rounded-pill">Går til klassen</a>
         </div>
-
-
-
-
+    </div>
+</div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://kit.fontawesome.com/fa23e7aba1.js" crossorigin="anonymous"></script>
